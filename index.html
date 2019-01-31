@@ -22,7 +22,9 @@
                 <li><a href="#">Контакты</a></li>
             </ul>
             <ul class="user-nav">
-                <li class="login-link"> <a href="#">Вход</a></li>
+                <li class="login-link">
+                    <a href="#">Вход</a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -127,13 +129,18 @@
         <p>Введите пожалуйста свой логин и пароль</p>
         <form action="#" class="login-form" method="post">
             <p>
-                <input type="text" name="login" placeholder="Логин">
+                <label for="user-login" class="visually-hidden">Логин</label>
+                <input type="text" name="login" placeholder="Логин" id="user-login">
             </p>
             <p>
-                <input type="password" name="password" placeholder="Пароль">
+                <label for="user-password" class="visually-hidden">Пароль</label>
+                <input type="password" name="password" placeholder="Пароль" id="user-password">
             </p>
-            <input type="checkbox" name="remember" class="visually-hidden">
-            <a href="#" class="restore">Я забыл пароль!</a>
+            <p class="login-password-info">
+                <label for="login-password-info">Запомните меня</label>
+                <input type="checkbox" name="remember" class="visually-hidden" id="login-password-info">
+                <a href="#" class="restore">Я забыл пароль!</a>
+            </p>
             <button class="button" type="submit">Войти</button>
         </form>
         <span class="modal-close">x</span>
