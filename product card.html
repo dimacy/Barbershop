@@ -84,8 +84,23 @@
     <section class="modal modal-login">
         <h2>Личный кабинет</h2>
         <p>Введите пожалуйста свой логин и пароль</p>
-        <!--Здесь будет форма-->
-        <span class="modal-close">x</span>
+        <form action="#" class="login-form" method="post">
+            <p>
+                <label for="user-login" class="visually-hidden">Логин</label>
+                <input type="text" name="login" placeholder="Логин" id="user-login">
+            </p>
+            <p>
+                <label for="user-password" class="visually-hidden">Пароль</label>
+                <input type="password" name="password" placeholder="Пароль" id="user-password">
+            </p>
+            <p class="login-password-info">
+                <label for="login-password-info">Запомните меня</label>
+                <input type="checkbox" name="remember" class="visually-hidden" id="login-password-info">
+                <a href="#" class="restore">Я забыл пароль!</a>
+            </p>
+            <button class="button" type="submit">Войти</button>
+        </form>
+        <button class="modal-close" type="button">Закрыть</button>
     </section>
 </body>
 
