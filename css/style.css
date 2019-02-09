@@ -18,6 +18,7 @@ body{
 }
 .inner-page{
     color: #000000;
+    line-height: 18px;
 
     background-color: #f9f6f3;
     background-image: url("../img/Layer_10_copy.png");
@@ -156,6 +157,8 @@ a{
     
     background-color: #f9f6f3;
     border: 2px solid #000000;
+    
+    outline: none;
 }
 .login-form input:focus{
     border-color: #663d15;
@@ -182,10 +185,55 @@ a{
 }
 .breadcrumbs{
     list-style: none;
+    line-height: 20px;
+}
+.breadcrumbs li::before{
+    content: "◆";
+    margin-right: 10px;
+}
+.breadcrumbs li:nth-child(1)::before{
+    content: none;
 }
 .breadcrumbs a{
     color: #000000;
 }
 .breabcrumbs-current a{
     color: #aba9a7;
+}
+fieldset{
+    border: none;
+}
+.filter legend{
+    font-size: 24px;
+    line-height: 30px;
+}
+.filter ul{
+    list-style: none;
+}
+.catalog-list{
+    list-style: none;
+    background-color: #ffffff;
+}
+.catalog-item>a{
+    color: #000000;
+}
+.catalog-item-price b{
+    background-color: #e6e6e6;
+}
+.pagination-list li{
+    list-style: none;
+    display: inline;
+}
+.pagination-item a{
+    color: #ffffff;
+    background-color: #000000;
+}
+.pagination-item-curent a{
+    color: #000000;
+    background-color: #ffffff;
+}
+.pagination-item a:hover,
+.appointment-item a:focus{
+    color: #000000;
+    background-color: #ffffff;
 }
