@@ -144,6 +144,8 @@ a{
 
     background-color: transparent;
     border: 2px solid #000000;
+
+    outline: none;
 }
 .contacts{
     width: 380px;
@@ -249,14 +251,35 @@ a{
 }
 
 /* стили для catalog.html <---------------------------------------*/
-
+.inner-page .main-nav{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.inner-page .main-header{
+    margin-bottom: 55px;
+    background-color: #000000;
+}
+.inner-page .user-nav{
+    margin-left: auto;
+}
+.header-logo-catalog{
+    order: 0;
+}
 .page-title{
     font-size: 30px;
     line-height: 42px;
+
+    margin-bottom: 25px;
 }
 .breadcrumbs{
     list-style: none;
     line-height: 20px;
+    
+    margin-bottom: 55px;
+    padding: 0;
+
+    display: flex;
 }
 .breadcrumbs li::before{
     content: "◆";
@@ -271,6 +294,13 @@ a{
 .breabcrumbs-current a{
     color: #aba9a7;
 }
+.catalog-colums{
+    display: flex;
+    justify-content: space-between;
+}
+.filters{
+    width: 180px;
+}
 fieldset{
     border: none;
 }
@@ -281,9 +311,28 @@ fieldset{
 .filter ul{
     list-style: none;
 }
+.catalog{
+    width: 700px;
+}
 .catalog-list{
     list-style: none;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: 0;
+    padding: 0;
+    margin-bottom: 25px;
+}
+.catalog-item{
     background-color: #ffffff;
+
+    width: 220px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+.catalog-item:nth-child(3n){
+    margin-right: 0px;
 }
 .catalog-item>a{
     color: #000000;
