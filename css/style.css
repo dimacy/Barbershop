@@ -342,6 +342,10 @@ fieldset{
 .catalog-item-price b{
     background-color: #e6e6e6;
 }
+.pagination-list{
+    padding: 0;
+    margin: 0;
+}
 .pagination-list li{
     list-style: none;
     display: inline;
@@ -358,4 +362,7 @@ fieldset{
 .appointment-item a:focus{
     color: #000000;
     background-color: #ffffff;
+}
+.inner-page .main-footer{
+    margin-top: 50px;
 }
