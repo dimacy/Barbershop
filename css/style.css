@@ -283,6 +283,10 @@ a{
 
     display: flex;
 }
+.breadcrumbs a:hover,
+.breadcrumbs a:focus{
+    text-decoration: underline;
+}
 .breadcrumbs li::before{
     content: "◆";
     margin-right: 10px;
@@ -293,7 +297,7 @@ a{
 .breadcrumbs a{
     color: #000000;
 }
-.breabcrumbs-current a{
+.breabcrumbs-current span{
     color: #aba9a7;
 }
 .catalog-colums{
