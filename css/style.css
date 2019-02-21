@@ -138,6 +138,26 @@ a{
 .feature-items h3{
     font-size: 30px;
     line-height: 42px;
+
+    margin: 0;
+    margin-bottom: 60px;
+    position: relative;
+}
+.feature-items h3::after{
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    margin-left: -10px;
+
+    transform: rotate(45deg);
+
+    background-color: #ffffff;
+}
+.feature-items p{
+    margin: 0;
 }
 .index-columns{
     display: flex;
