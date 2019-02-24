@@ -29,6 +29,10 @@ a{
     text-decoration: none;
 }
 .button{
+    display: inline-block;
+    padding: 10px 30px;
+
+    cursor: pointer;
     font: inherit;
 
     text-align: center;
@@ -40,6 +44,12 @@ a{
 .button:focus,
 .button:active{
     background-color: #663d15;
+}
+.button.disabled,
+.button:disabled{
+    cursor: default;
+    background-color: #000000;
+    opacity: 0.5;
 }
 .main-header{
     margin-bottom:75px;
@@ -169,9 +179,11 @@ a{
     color: #000000;
 
     background-color: #f8f5f2;
-    background-image: url("../img/Layer_10_copy.png");
-    background-position: 0 0;
-    background-repeat: repeat;
+    background-image: 
+    url("../img/Layer\ 17\ copy.png"),
+    url("../img/Layer_10_copy.png");
+    background-position: center, 0 0;
+    background-repeat: no-repeat, repeat;
 }
 .news{
     width: 380px;
@@ -182,16 +194,49 @@ a{
 .index-columns h2{
     font-size: 30px;
     line-height: 42px;
+    margin: 0;
+    margin-bottom: 25px;
 }
 .news-list{
     list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 25px;
 }
 .news-list time{
     text-transform: none;
 }
+.news-item{
+    margin-bottom: 25px; 
+}
+.news-item p{
+    margin: 0;
+}
 .gallery-content{
     background-color: #cccccc;
     border: 7px solid #ffffff;
+
+    margin: 0;
+    height: 164px;
+}
+.gallery-container{
+    height: 260px;
+    position: relative ;
+}
+.gallery-button{
+    width: 140px;
+    margin: 0;
+
+    box-sizing: border-box;
+   
+    position: absolute;
+    bottom: 0;
+}
+.gallery-button-back{
+    left: 0;
+}
+.gallery-button-next{
+    right: 0;
 }
 .appointment-item input{
     font: inherit;
