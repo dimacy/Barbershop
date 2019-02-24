@@ -105,6 +105,7 @@ input[type="radio"].visually-hidden{
 .user-nav{
     list-style: none;
     margin: 0;
+    padding: 0;
 }
 .site-nav{
     display: flex;
@@ -590,4 +591,10 @@ fieldset{
 }
 .inner-page .main-footer{
     margin-top: 50px;
+}
+
+/* стили для product card <---------------------------------------------------------------------------*/
+
+.inner-page .main-header-logo{
+    order: 0;
 }
