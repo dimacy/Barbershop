@@ -157,7 +157,7 @@ a{
     background-color: #ffffff;
 }
 .feature-items p{
-    margin: 0;
+    margin: 0 10px;
 }
 .index-columns{
     display: flex;
