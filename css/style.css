@@ -494,24 +494,41 @@ input[type="radio"].visually-hidden{
     font-size: 30px;
     line-height: 42px;
 
+    margin: 0;
     margin-bottom: 25px;
 }
 .breadcrumbs{
     list-style: none;
     line-height: 20px;
     
+    margin: 0;
     margin-bottom: 55px;
     padding: 0;
 
     display: flex;
+}
+.breadcrumbs li{
+    position: relative;
+    margin-right: 40px;
 }
 .breadcrumbs a:hover,
 .breadcrumbs a:focus{
     text-decoration: underline;
 }
 .breadcrumbs li::before{
-    content: "◆";
-    margin-right: 10px;
+    content: "";
+
+    width: 8px;
+    height: 8px;
+
+    background-color: #000000;
+
+    position: absolute;
+    left: -20px;
+    margin-left: -4px;
+    margin-top: 6px;
+
+    transform: rotate(45deg);
 }
 .breadcrumbs li:nth-child(1)::before{
     content: none;
@@ -566,6 +583,12 @@ fieldset{
     color: #000000;
 }
 .catalog-item-price b{
+    display: inline-block;
+    padding-top: 10px;
+    padding-right: 33px;
+    padding-bottom: 10px;
+    padding-left: 37px;
+    margin-right: -4px; 
     background-color: #e6e6e6;
 }
 .pagination-list{
@@ -613,4 +636,76 @@ fieldset{
     position: absolute;
     bottom: 0;
     left: 20px;
+}
+.product-photos{
+    width: 460px;
+}
+.product-photos img{
+    box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.2);
+}
+.description{
+    width: 390px;
+    padding: 0 10px;
+}
+.main-photo{
+    margin: 0;
+    margin-bottom: 20px;
+}
+.product-images{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.product-wrap{
+    width: 940px;
+
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 50px;
+}
+.product-images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.product-article{
+    color: #aeaeae;
+}
+.description p{
+    margin: 0;
+    margin-bottom: 30px;
+}
+.text-wrap{
+    display: flex;
+    justify-content: space-between;     
+}
+.description h2{
+    margin: 0;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+.description ul{
+    margin: 0;
+    padding: 0;
+    padding-left: 20px;
+    list-style: none;
+
+    position: relative;
+}
+.description li{
+    margin-bottom: 8px;
+}
+.description li::before{
+    content: "";
+
+    width: 8px;
+    height: 8px;
+    background-color: #000000;
+
+    position: absolute;
+    left: 0;
+    margin-top: 4px;
+
+    transform: rotate(45deg);
 }
