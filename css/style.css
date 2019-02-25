@@ -597,4 +597,20 @@ fieldset{
 
 .inner-page .main-header-logo{
     order: 0;
+    padding: 20px 20px; /*<-----------line-height у навигации 20 px высота логотипа 24, можно ли поменять высоту логотипа? временно поставил paddin-top-bottom 20 px, было 25px*/
+}
+.site-navigation-current{
+    position: relative;
+}
+.site-navigation-current::after{
+    content: "";
+    
+    width: 54px;
+    height: 4px;
+
+    background-color: #ffffff;
+
+    position: absolute;
+    bottom: 0;
+    left: 20px;
 }
