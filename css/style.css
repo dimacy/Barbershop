@@ -685,6 +685,10 @@ fieldset{
     margin-top: 60px;
     margin-bottom: 30px;
 }
+.catalog-item-price .button{
+    margin: 0;
+    padding: 10px 17px 10px 19px;
+}
 .description ul{
     margin: 0;
     padding: 0;
