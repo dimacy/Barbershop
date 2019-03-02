@@ -37,6 +37,7 @@ a{
     font: inherit;
 
     text-align: center;
+    text-transform: uppercase;
     color: #ffffff;
     background-color: #000000;
     border: none;
@@ -435,17 +436,72 @@ input[type="radio"].visually-hidden{
     background-color: #ffffff;
 }
 .modal{
+    position: fixed;
+
     color: #000000;
 
     background-color: #f8f3f0;
     background-image: url("../img/Layer_10_copy.png");
     background-position: 0 0;
     background-repeat: repeat;
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7)
 }
-.modal h2{
+.modal-login h2{
     font-size: 30px;
     line-height: 42px;
+
+    margin: 0;
+    margin-bottom: 20px;
 }
+.modal-login p{
+    margin: 0;
+    margin-bottom: 13px;
+}
+.modal-login{   
+    box-sizing: border-box;
+    width: 460px;
+
+    top: 120px;
+    left: 50%;
+
+    padding: 50px 80px;
+    margin-left: -230px;
+}
+.modal-close{
+    font-size: 0;
+
+    background-color: transparent;
+    border: 0;
+
+    cursor: pointer;
+
+    width: 23px;
+    height: 23px;
+
+    position: absolute;
+    top: 0;
+    right: -33px;
+}
+.modal-close::after,
+.modal-close::before{
+    content: "";
+
+    position: absolute;
+    top: 10px;
+    left: 2px;
+
+    width: 20px;
+    height: 4px;
+
+    background-color: #d0d0d0;
+}
+.modal-close::after{
+    transform: rotate(45deg);
+}
+.modal-close::before{
+    transform: rotate(-45deg);
+}
+
 .login-form input[type="text"],
 .login-form input[type="password"]{
     font: inherit;
@@ -456,6 +512,28 @@ input[type="radio"].visually-hidden{
     border: 2px solid #000000;
     
     outline: none;
+
+    width: 100%;
+
+    box-sizing: border-box;
+    padding: 10px 15px;
+    padding-right: 40px;
+
+    position: relative;
+}
+.login-form input[type="text"]::placeholder,
+.login-form input[type="password"]::placeholder{
+    color: #000000;
+}
+.user-login-icon{
+    background-image: url("../img/user.svg");
+    background-position: 270px center;
+    background-repeat: no-repeat;
+}
+.user-password-icon{
+    background-image: url("../img/lock.svg");
+    background-position: 270px center;
+    background-repeat: no-repeat;
 }
 .login-form input:focus{
     border-color: #663d15;
@@ -473,7 +551,55 @@ input[type="radio"].visually-hidden{
 .restore:focus{
     text-decoration: none;
 }
+.login-form .login-help{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
+    margin: 15px 0;
+}
+.login-checkbox{
+    position: relative;
+
+    padding-left: 30px;
+
+    cursor: pointer;
+}
+.login-checkbox input[type="checkbox"] + .checkbox-indicator{
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+
+    border: 2px solid #000000;
+}
+.login-checkbox input[type="checkbox"]:focus + .checkbox-indicator{
+    border-color: #663d15;
+}
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after,
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before{
+    content: "";
+
+    position: absolute;
+    top: 8px;
+    left: 1px;
+
+    width: 15px;
+    height: 2px;
+
+    background-color: #000000;
+}
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after{
+    transform: rotate(45deg);
+}
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before{
+    transform: rotate(-45deg);
+}
+.modal-login .button{
+    width: 100%;
+    margin-right: 0;
+}
 /* стили для catalog.html <---------------------------------------*/
 .inner-page .main-nav{
     display: flex;
