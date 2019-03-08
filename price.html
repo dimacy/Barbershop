@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Borodinski</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="inner-page">
+    <header class="main-header">
+
+        <nav class="main-nav container">
+
+            <a href="index.html" class="main-header-logo">
+                <img src="img/logo.png" alt="Логотип Барбершопа">
+            </a>
+
+            <ul class="site-nav">
+                <li><a href="#">Информация</a></li>
+                <li><a href="#">Новости</a></li>
+                <li class="site-navigation-current"><a href="#">Прайс-лист</a></li>
+                <li><a href="#">Магазин</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+            <ul class="user-nav">
+                <li>
+                    <a class="login-link" href="#">Вход</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1 class="page-title">Прайс-лист</h1>
+        <ul class="breadcrumbs">
+            <li><a href="index.html">Главная</a></li>
+            <li class="breabcrumbs-current"><span>Прайс-лист</span></li>
+        </ul>
+        <p class="price-logo">Истинно мужская классика</p>
+        <div class="price-column">
+            <section class="price-advantage">
+                <h2 class="advantage-logo">Мы используем только лучшие средства:</h2>
+                <ul class="advantage-list">
+                    <li class="advantage-item"><a href="#">Baxter Of California</a></li>
+                    <li class="advantage-item"><a href="#">Mr Natty</a></li>
+                    <li class="advantage-item"><a href="#">Suavecito</a></li>
+                    <li class="advantage-item"><a href="#">Malin+Goetz</a></li>
+                </ul>
+            </section>
+            <section class="price">
+                <h2 class="table-logo">Цены на услуги наших мастеров:</h2>
+                <table class="price-table">
+                    <tr class="price-row">
+                        <td class="price-column">Стрижка</td>
+                        <td class="price-column">1500 ₽</td>
+                    </tr>
+                    <tr class="price-row">
+                        <td class="price-column">Стрижка бороды</td>
+                        <td class="price-column">500 ₽</td>
+                    </tr>
+                    <tr class="price-row">
+                        <td class="price-column">Накпутка усов</td>
+                        <td class="price-column">350 ₽</td>
+                    </tr>
+                </table>
+            </section>
+        </div>
+        <section class="description">
+            <h2 class="description-logo">Несколько слов о нас:</h2>
+            <p>Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это
+                уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.</p>
+            <p>Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в
+                обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и
+                свободно.</p>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <div class="container">
+            <p class="footer-contacts">БАРБЕРШОП «БОРОДИНСКИЙ» <br>
+                АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8 <br>
+                <a href="#"> КАК НАС НАЙТИ?</a> <br>
+                ТЕЛЕФОН: +7 (495) 666-02-66</p>
+            <div class="footer-social">
+                <b>Давайте дружить!</b>
+                <ul class="social-link">
+                    <li><a href="#" class="social-button-vk"><span class="visually-hidden">Вконтакте</span></a></li>
+                    <li><a href="#" class="social-button-fb"><span class="visually-hidden">Фейсбук</span></a></li>
+                    <li><a href="#" class="social-button-inst"><span class="visually-hidden">Инстаграм</span></a></li>
+                </ul>
+            </div>
+            <p class="footer-copyright">
+                <b>Разработано:</b>
+                <a href="#" class="button">HTML ACADEMY</a>
+            </p>
+        </div>
+    </footer>
+    <section class="modal modal-login">
+        <h2>Личный кабинет</h2>
+        <p>Введите пожалуйста свой логин и пароль</p>
+        <form action="#" class="login-form" method="post">
+            <p>
+                <label for="user-login" class="visually-hidden">Логин</label>
+                <input type="text" name="login" placeholder="Логин" id="user-login">
+            </p>
+            <p>
+                <label for="user-password" class="visually-hidden">Пароль</label>
+                <input type="password" name="password" placeholder="Пароль" id="user-password">
+            </p>
+            <p class="login-password-info">
+                <label for="login-password-info">Запомните меня</label>
+                <input type="checkbox" name="remember" class="visually-hidden" id="login-password-info">
+                <a href="#" class="restore">Я забыл пароль!</a>
+            </p>
+            <button class="button" type="submit">Войти</button>
+        </form>
+        <button class="modal-close" type="button">Закрыть</button>
+    </section>
+</body>
+
+</html>
