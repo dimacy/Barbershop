@@ -1,3 +1,10 @@
+@font-face{
+    font-family: 'PT Sans Narrow';
+    src: url('../fonts/web/ptsansnarrow.woff') format('woff'),
+        url('../fonts/web/ptsansnarrow.woff2') format('woff2'),
+        url('../fonts/web/ptsansnarrowbold.woff') format('woff'),
+        url('../fonts/web/ptsansnarrowbold.woff2') format('woff2');
+}
 body{
     margin: 0;
     padding: 0;
@@ -693,9 +700,90 @@ input[type="radio"].visually-hidden{
 }
 .filters{
     width: 180px;
+    margin-right: 60px;
 }
 fieldset{
     border: none;
+    
+    margin: 0;
+    padding: 0;
+}
+fieldset legend{
+    padding: 0;
+    margin-bottom: 30px;
+}
+fieldset ul{
+    margin: 0;
+    padding:0;
+}
+.filter-option{
+    margin-bottom: 20px;
+    padding-left: 40px;
+    position: relative;
+}
+.filter-option input[type="checkbox"] + .checkbox-indicator{
+    width: 20px;
+    height: 20px;
+
+    border: 2px solid #000000;
+    box-sizing: border-box;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.filter-option input[type="checkbox"]:focus + .checkbox-indicator,
+.filter-option input[type="checkbox"]:hover + .checkbox-indicator{
+    border-color: #663d15;
+}
+.filter-option input[type="checkbox"]:checked + .checkbox-indicator:after,
+.filter-option input[type="checkbox"]:checked + .checkbox-indicator::before{
+     content: "";
+
+     position: absolute;
+     top: 7px;
+     left: 0;
+
+     width: 15px;
+     height: 2px;
+
+     background-color: #000000;
+}
+.filter-option input[type="checkbox"]:checked + .checkbox-indicator:after{
+    transform: rotate(45deg);
+}
+.filter-option input[type="checkbox"]:checked + .checkbox-indicator::before{
+    transform: rotate(-45deg);
+}
+.filter-option input[type="radio"] + .radio-indicator{
+    width: 20px;
+    height: 20px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.filter-option input[type="radio"]:checked + .radio-indicator::before{
+    content: "";
+
+    width: 8px;
+    height: 8px;
+
+    background-color: #000000;
+
+    border-radius: 10px;
+
+    position: absolute;
+    top: 3.7px;
+    left: 3.9px;
+}
+.filter-option input[type="radio"]:focus + .radio-indicator,      /*<--------- Поработать над фокусом*/
+.filter-option input[type="radio"]:hover + .radio-indicator {
+    border-color: #663d15;
 }
 .filter legend{
     font-size: 24px;
@@ -729,6 +817,36 @@ fieldset{
 }
 .catalog-item>a{
     color: #000000;
+
+    display: flex;
+    flex-direction: column;
+}
+/*ПОМЕНЯТЬ РАЗМЕР ШРИФТА h3!!!!!!!!!!!!!!!!!!!!!!!*/
+.catalog-item h3{
+    margin: 0;
+    order: 1;
+}
+.catalog-item-image{
+    margin: 0;
+}
+.catalog-category{
+    display: block;
+    margin-top: 10px;
+    margin-left: 16px;
+}
+.catalog-item-title{
+    display: block;
+
+    margin: 0;
+    margin-left: 16px;
+    margin-bottom: 15px;
+}
+.catalog-item-price{
+    display: block;
+
+    margin: 0;
+    margin-left: 16px;
+    margin-bottom: 16px;
 }
 .catalog-item-price b{
     display: inline-block;
@@ -742,14 +860,26 @@ fieldset{
 .pagination-list{
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-wrap: wrap;
 }
-.pagination-list li{
+.pagination-item{
     list-style: none;
-    display: inline;
+    margin-right: 7px;
 }
 .pagination-item a{
     color: #ffffff;
     background-color: #000000;
+
+    /*padding: 13px 19px;*/
+    display: block;
+
+    width: 43px;
+    height: 43px;
+    box-sizing: border-box;
+
+    text-align: center;
+    padding-top: 13px;
 }
 .pagination-item-curent a{
     color: #000000;
