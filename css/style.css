@@ -905,15 +905,18 @@ fieldset ul{
 }
 .site-navigation-current::after{
     content: "";
-    
-    width: 54px;
-    height: 4px;
-
-    background-color: #ffffff;
 
     position: absolute;
     bottom: 0;
     left: 20px;
+    right: 20px;
+
+    height: 4px;
+
+    background-color: #ffffff;
+}
+.site-navigation-current a:not([href]){
+    background-color: #000000;
 }
 .product-photos{
     width: 460px;
