@@ -1000,16 +1000,31 @@ fieldset ul{
     font-size: 48px;
     line-height: 48px;
 
-    display: block;
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    /* flex-wrap: wrap; */
+
     margin: 0;
     margin-bottom: 65px;
-    padding-left: 185px;
 
-    background-image:
-    url('../img/Без_имени.png'),
-    url('../img/Без_имени.png');
-    background-position: left center, right center;
-    background-repeat: no-repeat;
+}
+.price-logo::after,
+.price-logo::before{
+    content: "";
+
+    height: 2px;
+    width: 50px;
+
+    background-color: #000000;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+.price-logo::before{
+    margin-right: 25px;
+}
+.price-logo::after{
+    margin-left: 25px;
 }
 .price-wrap{
     display: flex;
