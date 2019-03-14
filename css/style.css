@@ -687,7 +687,7 @@ input[type="radio"].visually-hidden{
 }
 .breadcrumbs li:nth-child(1)::before{
     content: none;
-}
+} 
 .breadcrumbs a{
     color: #000000;
 }
@@ -1114,4 +1114,7 @@ fieldset ul{
     margin:0;
     margin-left: 100px;
     margin-top: 60px;
+}
+.modal-show{
+    display: block;
 }
