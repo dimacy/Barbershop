@@ -239,20 +239,30 @@
         <form action="#" class="login-form" method="post">
             <p>
                 <label for="user-login" class="visually-hidden">Логин</label>
-                <input type="text" name="login" placeholder="Логин" id="user-login">
+                <input class="user-login-icon" type="text" name="login" placeholder="Логин" id="user-login">
             </p>
             <p>
                 <label for="user-password" class="visually-hidden">Пароль</label>
-                <input type="password" name="password" placeholder="Пароль" id="user-password">
+                <input class="user-password-icon" type="password" name="password" placeholder="Пароль"
+                    id="user-password">
             </p>
-            <p class="login-password-info">
-                <label for="login-password-info">Запомните меня</label>
-                <input type="checkbox" name="remember" class="visually-hidden" id="login-password-info">
+            <p class="login-help">
+                <label class="login-checkbox">
+                    <input type="checkbox" name="remember" class="visually-hidden">
+                    <span class="checkbox-indicator"></span>
+                    Запомните меня
+                </label>
                 <a href="#" class="restore">Я забыл пароль!</a>
             </p>
             <button class="button" type="submit">Войти</button>
         </form>
         <button class="modal-close" type="button">Закрыть</button>
+    </section>
+    <section class="modal-map">
+        <p>
+            <img src="img/Без имени-1.png" width="766px" height="560px" alt="Адрес расположения барбершоп">
+        </p>
+        <button class="modal-close map-close" type="button">Закрыть</button>
     </section>
     <script src="JS/script.js"></script>
 </body>
